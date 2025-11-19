@@ -38,7 +38,7 @@ const ProfessionalAuth = () => {
             <Calendar className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-2">
-            AgendaPro
+            Agenda Super
           </h1>
           <p className="text-muted-foreground text-center">
             {isLogin ? "Entre na sua conta" : "Crie sua conta profissional"}
