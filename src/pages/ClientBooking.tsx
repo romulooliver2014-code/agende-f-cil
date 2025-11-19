@@ -59,7 +59,7 @@ const ClientBooking = () => {
               <Calendar className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-3xl font-bold mb-2">Agenda Super</h1>
-            <p className="text-muted-foreground">Escolha profissional, serviço e horário</p>
+            <p className="text-muted-foreground">Agende seu Horário</p>
           </div>
 
           <div className="space-y-6">
