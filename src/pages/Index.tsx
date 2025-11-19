@@ -14,7 +14,7 @@ const Index = () => {
             <Calendar className="w-10 h-10 text-white" />
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent leading-tight pb-2">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent" style={{ lineHeight: '1.2', paddingBottom: '0.1em' }}>
             Agenda Super
           </h1>
           
