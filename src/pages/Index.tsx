@@ -28,16 +28,8 @@ const Index = () => {
               size="lg"
               className="bg-gradient-to-r from-primary to-primary-dark hover:opacity-90 text-lg px-8"
             >
-              Sou Profissional
+              Quero ter o app Agendar Super
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              onClick={() => navigate("/book/exemplo123")}
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-primary/50 hover:bg-primary/5"
-            >
-              Ver Exemplo de Agendamento
             </Button>
           </div>
         </div>
