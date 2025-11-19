@@ -25,7 +25,7 @@ const App = () => (
           <Route path="/professional/auth" element={<ProfessionalAuth />} />
           <Route path="/professional/onboarding" element={<ProfessionalOnboarding />} />
           <Route path="/professional/dashboard" element={<ProfessionalDashboard />} />
-          <Route path="/booking" element={<ClientBooking />} />
+          <Route path="/book/:professionalSlug" element={<ClientBooking />} />
           <Route path="/client/signup" element={<ClientAuth />} />
           <Route path="/client/dashboard" element={<ClientDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
