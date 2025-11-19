@@ -32,12 +32,12 @@ const Index = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
-              onClick={() => navigate("/booking")}
+              onClick={() => navigate("/book/exemplo123")}
               size="lg"
               variant="outline"
               className="text-lg px-8 border-primary/50 hover:bg-primary/5"
             >
-              Fazer Agendamento
+              Ver Exemplo de Agendamento
             </Button>
           </div>
         </div>

@@ -5,7 +5,9 @@ import { Calendar, Users, Settings, BarChart3, Link2, Clock } from "lucide-react
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ProfessionalDashboard = () => {
-  const [bookingLink] = useState("https://agendasuper.com/book/exemplo123");
+  // In a real app, this would come from the logged-in professional's data
+  const [professionalSlug] = useState("exemplo123"); // This would be fetched from auth/database
+  const bookingLink = `${window.location.origin}/book/${professionalSlug}`;
 
   const copyLink = () => {
     navigator.clipboard.writeText(bookingLink);
