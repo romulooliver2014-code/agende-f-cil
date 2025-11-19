@@ -7,6 +7,27 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      {/* Header */}
+      <header className="container mx-auto px-4 py-6">
+        <div className="flex justify-end gap-3">
+          <Button
+            onClick={() => navigate("/professional/auth")}
+            variant="ghost"
+            size="lg"
+            className="text-foreground"
+          >
+            Entrar
+          </Button>
+          <Button
+            onClick={() => navigate("/professional/auth")}
+            size="lg"
+            className="bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
+          >
+            Cadastre-se
+          </Button>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
