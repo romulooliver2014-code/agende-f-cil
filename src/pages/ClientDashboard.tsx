@@ -19,7 +19,7 @@ const ClientDashboard = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center">
               <Calendar className="w-5 h-5 text-white" />
             </div>
-            <h1 className="text-xl font-bold">Meus Agendamentos</h1>
+            <h1 className="text-xl font-bold">Agenda Super</h1>
           </div>
           <Button variant="outline" size="sm">
             Sair

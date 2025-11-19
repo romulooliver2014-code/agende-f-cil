@@ -5,7 +5,7 @@ import { Calendar, Users, Settings, BarChart3, Link2, Clock } from "lucide-react
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ProfessionalDashboard = () => {
-  const [bookingLink] = useState("https://agendapro.com/book/exemplo123");
+  const [bookingLink] = useState("https://agendasuper.com/book/exemplo123");
 
   const copyLink = () => {
     navigator.clipboard.writeText(bookingLink);
@@ -19,7 +19,7 @@ const ProfessionalDashboard = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center">
               <Calendar className="w-5 h-5 text-white" />
             </div>
-            <h1 className="text-xl font-bold">AgendaPro</h1>
+            <h1 className="text-xl font-bold">Agenda Super</h1>
           </div>
           <Button variant="outline" size="sm">
             Sair

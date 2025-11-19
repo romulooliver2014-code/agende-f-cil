@@ -43,7 +43,7 @@ const ClientAuth = () => {
             <Calendar className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-2">
-            {isLogin ? "Entrar" : "Criar Conta"}
+            Agenda Super
           </h1>
           <p className="text-muted-foreground text-center">
             {isLogin
