@@ -3,18 +3,14 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users, Settings, BarChart3, Link2, Clock } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 const ProfessionalDashboard = () => {
   // In a real app, this would come from the logged-in professional's data
   const [professionalSlug] = useState("exemplo123"); // This would be fetched from auth/database
   const bookingLink = `${window.location.origin}/book/${professionalSlug}`;
-
   const copyLink = () => {
     navigator.clipboard.writeText(bookingLink);
   };
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-accent/5">
+  return <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <header className="bg-card border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -32,7 +28,11 @@ const ProfessionalDashboard = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h2 className="text-3xl font-bold mb-2">Dashboard</h2>
-          <p className="text-muted-foreground">Gerencie seu negócio em um só lugar</p>
+          <p className="text-muted-foreground">Gerencie seu negócio em um só lugar.
+
+
+
+        </p>
         </div>
 
         {/* Stats Cards */}
@@ -122,11 +122,7 @@ const ProfessionalDashboard = () => {
             <Card className="p-6">
               <h3 className="text-lg font-semibold mb-4">Próximos Agendamentos</h3>
               <div className="space-y-3">
-                {[1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="p-4 border rounded-lg hover:bg-muted/50 transition-colors"
-                  >
+                {[1, 2, 3].map(i => <div key={i} className="p-4 border rounded-lg hover:bg-muted/50 transition-colors">
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-medium">Cliente {i}</p>
@@ -138,8 +134,7 @@ const ProfessionalDashboard = () => {
                         Ver Detalhes
                       </Button>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </Card>
           </TabsContent>
@@ -176,8 +171,6 @@ const ProfessionalDashboard = () => {
           </TabsContent>
         </Tabs>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default ProfessionalDashboard;
